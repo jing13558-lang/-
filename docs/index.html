@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="考研英语一历年真题分篇练习。每完成一篇，再查看这一篇的答案。">
+  <title>考研英语一 · 分篇真题练习</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="返回首页"><span class="brand-mark">EN<span class="brand-dot">.</span></span><span class="brand-copy">真题练习室<small>考研英语一</small></span></a>
+      <span class="topbar-note">一篇一练 · 完成后揭晓答案</span>
+    </header>
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-intro"><span class="eyebrow">PRACTICE LIBRARY</span><h1>把每篇<br><em>练明白。</em></h1><p>按年份选卷，完成当前篇章后，再核对这一篇的参考答案。作文已移除。</p></div>
+        <label class="year-label" for="yearSelect">选择年份</label>
+        <select id="yearSelect" aria-label="选择真题年份"></select>
+        <div class="sidebar-stats"><span id="yearType">英语一真题</span><strong id="doneCount">0 / 7 篇完成</strong></div>
+        <div class="score-panel"><span>本年实时得分</span><strong id="yearScore">0 / 70 分</strong><small>完成一篇后计分；翻译按参考译文自评</small></div>
+        <nav id="sectionNav" class="section-nav" aria-label="题型与篇章"></nav>
+        <div class="sidebar-footer">进度自动保存在本浏览器<br><a href="https://english-exam.lazynote.cn/kaoyan/downloads/" target="_blank" rel="noopener">查看真题来源 ↗</a></div>
+      </aside>
+      <section class="workspace" id="workspace" aria-live="polite"><div class="loading">正在打开真题…</div></section>
+    </main>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
